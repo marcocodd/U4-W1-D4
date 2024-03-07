@@ -10,6 +10,6 @@ public class Dirigente extends Dipendente {
 
     @Override
     public void calculateSalary() {
-        stipendio = stipendio + bonusSalario;
+        stipendio = 2000 + bonusSalario;
     }
 }

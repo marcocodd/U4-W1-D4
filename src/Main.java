@@ -5,9 +5,9 @@ import entities.*;
 public class Main {
     public static void main(String[] args) {
 
-        Dipendente giovanni = new DipendenteFullTime(1, 1000, Dipartimento.VENDITE);
-        Dipendente alfredo = new DipendentePartTime(2, 0, Dipartimento.PRODUZIONE, 10, 10);
-        Dipendente antonio = new Dirigente(3, 2150.99, Dipartimento.AMMINISTRAZIONE, 250.55);
+        Dipendente giovanni = new DipendenteFullTime(1, 0, Dipartimento.VENDITE);
+        Dipendente alfredo = new DipendentePartTime(2, 0, Dipartimento.PRODUZIONE, 25, 10);
+        Dipendente antonio = new Dirigente(3, 0, Dipartimento.AMMINISTRAZIONE, 250.55);
 
         Dipendente[] dipendenti = {giovanni, alfredo, antonio};
         for (int i = 0; i < dipendenti.length; i++) {
