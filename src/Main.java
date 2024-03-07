@@ -13,7 +13,17 @@ public class Main {
         for (int i = 0; i < dipendenti.length; i++) {
             System.out.println("Matricola:" + dipendenti[i].getMatricola());
         }
-        antonio.calculateSalary();
-        System.out.println(antonio.getStipendio());
+//        antonio.calculateSalary();
+//        alfredo.calculateSalary();
+//        System.out.println(antonio.getStipendio());
+//        System.out.println(alfredo.getStipendio());
+
+        Dipendente[] dipendentiStipendi = {giovanni, alfredo, antonio};
+        double somma = 0;
+        for (int i = 0; i < dipendentiStipendi.length; i++) {
+            dipendentiStipendi[i].calculateSalary();
+            somma = dipendentiStipendi[i].getStipendio() + somma;
+        }
+        System.out.println(somma);
     }
 }
